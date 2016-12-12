@@ -17,7 +17,7 @@ lizmap:
   image: jancelin/docker-lizmap
   hostname: lizmap
   ports:
-    - "0.0.0.0:9999:80"
+    - "0.0.0.0:80:80"
   # Uncomment and adapt this if you are using a jwilder/nginx-proxy
   #environment:
   #  - VIRTUAL_HOST=sub.domain.com

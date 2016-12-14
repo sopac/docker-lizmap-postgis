@@ -2,6 +2,8 @@ docker cp logo.png dockerlizmappostgis_lizmap_1:/var/www/websig/lizmap/www/theme
 docker cp logo.png dockerlizmappostgis_lizmap_1:/var/www/websig/lizmap/www/css/img/
 docker cp logo_footer.png dockerlizmappostgis_lizmap_1:/var/www/websig/lizmap/www/themes/default/css/img/
 
+sudo chmod 777 -R projects/*
+
 # Add repository
 LIZMAP_CONFIG=lizmap_var/config/lizmapConfig.ini.php
 echo "[repository:solomons]" | sudo tee -a $LIZMAP_CONFIG
@@ -11,3 +13,4 @@ echo "allowUserDefinedThemes=1" | sudo tee -a $LIZMAP_CONFIG
 
 #Permissions
 sudo cat load_permissions.sql | sudo sqlite3 lizmap_var/db/jauth.db
+

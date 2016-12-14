@@ -1,0 +1,12 @@
+BEGIN TRANSACTION;
+INSERT INTO `jacl2_rights` VALUES ('lizmap.repositories.view','__anonymous','solomons',0);
+INSERT INTO `jacl2_rights` VALUES ('lizmap.repositories.view','admins','solomons',0);
+INSERT INTO `jacl2_rights` VALUES ('lizmap.tools.displayGetCapabilitiesLinks','__anonymous','solomons',0);
+INSERT INTO `jacl2_rights` VALUES ('lizmap.tools.displayGetCapabilitiesLinks','admins','solomons',0);
+INSERT INTO `jacl2_rights` VALUES ('lizmap.tools.edition.use','__anonymous','solomons',0);
+INSERT INTO `jacl2_rights` VALUES ('lizmap.tools.edition.use','admins','solomons',0);
+INSERT INTO `jacl2_rights` VALUES ('lizmap.tools.layer.export','__anonymous','solomons',0);
+INSERT INTO `jacl2_rights` VALUES ('lizmap.tools.layer.export','admins','solomons',0);
+INSERT INTO `jacl2_rights` VALUES ('lizmap.tools.loginFilteredLayers.override','__anonymous','solomons',0);
+INSERT INTO `jacl2_rights` VALUES ('lizmap.tools.loginFilteredLayers.override','admins','solomons',0);
+COMMIT;

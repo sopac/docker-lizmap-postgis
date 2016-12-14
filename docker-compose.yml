@@ -13,8 +13,7 @@ db:
   restart: on-failure:5
 
 lizmap:
-  #image: jancelin/docker-lizmap:3-2.14LTR
-  image: jancelin/docker-lizmap
+  image: jancelin/docker-lizmap:latest
   hostname: lizmap
   ports:
     - "0.0.0.0:80:80"
